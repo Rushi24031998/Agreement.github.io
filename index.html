@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="color: orange">Agreement</h1>
+<h6>Valid from 12/11 - 12/15</h6>
+
+<form action="AfterAgreement.html" onsubmit="return Next()">
+  <input type="checkbox" id="Condition1" name="Condition" value="1">
+  <label for="Condition1"> I will video call(mute/nomral) Rushi for atleast 2 minutes everyday.</label><br>
+  <input type="checkbox" id="Condition2" name="Condition" value="2">
+  <label for="Condition2"> I will reply Rushi within an hour after I receive a message a from him.</label><br>
+  <input type="checkbox" id="Condition3" name="Condition" value="3">
+  <label for="Condition3"> I will never leave Rushi on read.(In case I am busy I'll not read his messages only.)</label><br>
+  <input type="checkbox" id="Condition4" name="Condition" value="4">
+  <label for="Condition4"> If Rushi says, he is missing me(which he does, A LOT), I will also say "Miss you too" even if I'm not missing him, which I usually don't.</label><br>
+  <input type="checkbox" id="Condition5" name="Condition" value="5">
+  <label for="Condition5"> <strong>I will not look at other boys at the reception and if I do I promise not to have a crush on them because I know Rushi is waiting for me back there.</strong></label><br>
+  <input type="checkbox" id="Condition6" name="Condition" value="6">
+  <label for="Condition6"> I am going to be soooo busy during the day, so I'll try to give Rushi some time at the night and I'll definitely say good night while sleeping.</label><br><br>
+  <input type="submit" value="Next" id="btn" style="width: 10%;height: 20%; background: orange">
+</form>
+   
+<script>
+    
+    //location.reload();
+            
+    function Next(){
+        var cd1 = document.getElementById("Condition1").checked;
+        var cd2 = document.getElementById("Condition2").checked;
+        var cd3 = document.getElementById("Condition3").checked;
+        var cd4 = document.getElementById("Condition4").checked;
+        var cd5 = document.getElementById("Condition5").checked;
+        var cd6 = document.getElementById("Condition6").checked;
+        
+        if (cd1==true && cd2==true && cd3==true && cd4==true && cd5==true && cd6==true){
+            return true;
+        }else{
+            alert("You have to accept all the conditions to have 'Rushi' with you for these 4 days !!");
+            return false;
+        }
+    }
+</script>
+
+</body>
+</html>
